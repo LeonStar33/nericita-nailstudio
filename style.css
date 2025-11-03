@@ -183,6 +183,55 @@ h2 { font-size: 2.2em; color: var(--color-text); }
     font-weight: 600;
 }
 
+.cotizacion {
+  /* 1. ¡La propiedad mágica! Fija el botón en la pantalla */
+  position: fixed; 
+  /* 2. Lo pone 25px arriba del borde inferior */
+  bottom: 50px; 
+  
+  /* 3. Lo pone 25px a la izquierda del borde derecho */
+  right: 20px; 
+  
+  /* 4. ¡MUY IMPORTANTE! Asegura que esté sobre todo el contenido */
+  z-index: 600;
+
+  /* --- Tus estilos y mejoras --- */
+  
+  /* Tu color de fondo */
+  background-color: #cbe67e; 
+  
+  /* Relleno para que el texto no esté pegado a los bordes */
+  padding: 12px 20px;
+  
+  /* Esquinas redondeadas para que se vea más suave */
+  border-radius: 25px; /* Forma de píldora */
+  
+  /* Color del texto (uno oscuro para que contraste) */
+  color:var(--color-text); 
+  
+  /* Quita el subrayado que traen los enlaces <a> */
+ text-decoration: none;
+  
+  /* Opcional: una sombra suave para que resalte */
+  box-shadow: 0 4px 8px,var(--color-pink);
+  
+  /* Opcional: Texto en negritas */
+  font-weight: bold;
+}
+
+.cotizacion :hover{
+     color:var(--color-pink);
+      text-decoration: none;
+      
+}
+.cotizacion a {
+      text-decoration: none;
+      color:var(--color-text-light); 
+
+}
+
+
+
 /* --- RESPONSIVE DESIGN (Para celulares) --- */
 @media (max-width: 768px) {
     h1 { font-size: 2.2em; }
